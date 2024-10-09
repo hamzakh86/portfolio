@@ -1,6 +1,8 @@
-import React from "react";
+// src/components/Work.jsx
+import React, { useState } from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 import { styles } from "../styles";
 import { github } from "../assets";
@@ -68,11 +70,28 @@ const ProjectCard = ({
 };
 
 const Works = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % Math.ceil(projects.length / 3));
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + Math.ceil(projects.length / 3)) % Math.ceil(projects.length / 3));
+  };
+
+  const getProjectsForPage = (pageIndex) => {
+    const startIndex = pageIndex * 3;
+    return projects.slice(startIndex, startIndex + 3);
+  };
+
+  const currentProjects = getProjectsForPage(currentIndex);
+
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+        <p className={`${styles.sectionSubText} text-center`}>My work</p>
+        <h2 className={`${styles.sectionHeadText} text-center`}>Projects.</h2>
       </motion.div>
 
       <div className='w-full flex'>
@@ -88,11 +107,30 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-7 justify-center'>
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
-      </div>
+      <motion.div
+        variants={fadeIn("", "", 0.1, 1)}
+        className='mt-12 relative w-full flex justify-center items-center'
+      >
+        <button
+          onClick={handlePrev}
+          className='absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-14 bg-black-100 text-white p-3 rounded-full shadow-lg hover:bg-black-200 transition duration-300 hover:shadow-xl'
+        >
+          <FaArrowLeft className='text-xl' />
+        </button>
+
+        <div className='flex space-x-4 w-full'>
+          {currentProjects.map((project, index) => (
+            <ProjectCard key={`project-${index}`} index={index} {...project} />
+          ))}
+        </div>
+
+        <button
+          onClick={handleNext}
+          className='absolute right-0 top-1/2 transform -translate-y-1/2  -translate-x-14bg -black-100 text-white p-3 rounded-full shadow-lg hover:bg-black-200 transition duration-300 hover:shadow-xl'
+        >
+          <FaArrowRight className='text-xl' />
+        </button>
+      </motion.div>
     </>
   );
 };

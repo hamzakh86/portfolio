@@ -10,7 +10,7 @@ const Hero = () => {
     'A Full Stack JS Developer',
     'Freelancer',
     'Open Source Enthusiast',
-    'Web Developer',
+    'Full Stack Js',
     'Learning In Public'
     ];
 

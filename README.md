@@ -1,3 +1,5 @@
+<!-- README.md -->
+
 <div align="center">
   <br />
     <a href="https://youtu.be/0fYi8SGA20k?feature=shared" target="_blank">
@@ -142,15 +144,15 @@ import {
   nodejs,
   mongodb,
   git,
-  figma,
-  docker,
+  next,
+  nest,
   gomycode,
   starbucks,
   tesla,
-  shopify,
-  carrent,
+  cwd,
+  chat,
   jobit,
-  tripguide,
+  realestateimg,
   threejs,
 } from "../assets";
 
@@ -182,7 +184,7 @@ export const navLinks = [
 ];
 const services = [
   {
-    title: "Web Developer",
+    title: "Full Stack Js",
     icon: web,
   },
   {
@@ -245,46 +247,21 @@ const technologies = [
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "next",
+    icon: next,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "nest",
+    icon: nest,
   },
 ];
 
 const experiences = [
+ 
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Full Stack Js",
+    company_name: "celestial wave digital",
+    icon: cwd,
     iconBg: "#383E56",
     date: "Jan 2022 - Jan 2023",
     points: [
@@ -338,7 +315,7 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Car Showcase",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
@@ -355,11 +332,11 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: car,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "E-Commerce Website",
     description:
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
@@ -380,7 +357,7 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "A Modern Real Estate",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
@@ -397,7 +374,81 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: realestateimg,
+    source_code_link: "https://github.com/",
+  },
+
+
+  {
+    name: " Food Delivery",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: fooddelivery,
+    source_code_link: "https://github.com/",
+  },
+
+
+
+
+
+  {
+    name: "Portfolio Website",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: portfolio,
+    source_code_link: "https://github.com/",
+  },
+
+
+
+
+  {
+    name: "Chat Application",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: chat,
     source_code_link: "https://github.com/",
   },
 ];

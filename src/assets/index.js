@@ -1,3 +1,4 @@
+//src/assets/index.js
 import logo from "./logo.svg";
 import backend from "./backend.png";
 import Front from "./Front.png";
@@ -8,8 +9,8 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
+import nest from "./tech/nest.png";
+import next from "./tech/next.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
@@ -22,13 +23,17 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import gomycode from "./company/gomycode.png";
-import shopify from "./company/shopify.png";
+import cwd from "./company/cwd.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
+import chat from "./chat.png";
+import fooddelivery from "./fooddelivery.png";
+import portfolio from "./portfolio.png";
+import car from "./car.png";
+
 import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import realestateimg from "./realestateimg.png";
 
 export {
   logo,
@@ -40,8 +45,8 @@ export {
   menu,
   close,
   css,
-  docker,
-  figma,
+  nest,
+  next,
   git,
   html,
   javascript,
@@ -53,10 +58,13 @@ export {
   typescript,
   threejs,
   gomycode,
-  shopify,
+  cwd,
   starbucks,
   tesla,
-  carrent,
+  chat,
+  car,
+  portfolio,
+  fooddelivery,
   jobit,
-  tripguide,
+  realestateimg,
 };
