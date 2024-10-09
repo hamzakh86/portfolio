@@ -1,4 +1,3 @@
-// src/components/Work.jsx
 import React, { useState } from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
@@ -91,7 +90,7 @@ const Works = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>My work</p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>Projects.</h2>
+        <h2 className={`${styles.sectionHeadText} text-center text-slate-600`}>Projects.</h2>
       </motion.div>
 
       <div className='w-full flex'>

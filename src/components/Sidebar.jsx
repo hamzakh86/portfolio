@@ -1,4 +1,3 @@
-// src/components/Sidebar.jsx
 import React, { useEffect, useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { navLinks } from "../constants";
@@ -33,7 +32,7 @@ const Sidebar = () => {
             alt="Profile"
             className="w-35 h-35 rounded-full object-cover border-2 border-white shadow-lg" 
           />
-          <h2 className="text-primary text-[16px] font-bold flex mt-4">Hamza Khaled</h2>
+          <h2 className="text-slate-500 text-[16px] font-bold flex mt-4">Hamza Khaled</h2>
         </div>
         <ul className="space-y-4 w-full text-center">
           {navLinks.map((nav, index) => (

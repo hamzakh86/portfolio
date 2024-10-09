@@ -1,4 +1,3 @@
-// src/components/Footer.jsx
 import React, { useState } from "react";
 import { FaLinkedin, FaGithub, FaInstagram, FaFacebook, FaEnvelope } from "react-icons/fa";
 import { CopyToClipboard } from "react-copy-to-clipboard";
@@ -17,7 +16,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
         <div className="flex items-center space-x-4">
           <CopyToClipboard text="khaledhamza251785@gmail.com" onCopy={handleEmailCopy}>
-            <div className="cursor-pointer text-primary hover:text-blue-500 transition-colors duration-300 flex items-center gap-2">
+            <div className="cursor-pointer text-slate-700 hover:text-blue-500 transition-colors duration-300 flex items-center gap-2">
               <FaEnvelope className="text-2xl" />
               <h1 className="text-lg font-semibold">Email : </h1>
               <span className="text-lg">khaledhamza251785@gmail.com</span>
@@ -31,8 +30,8 @@ const Footer = () => {
         </div>
 
         <div className="flex items-center space-x-6">
-          <h3 className="text-lg font-bold">Socials</h3>
-          <div className="flex space-x-6">
+          <h3 className="text-lg font-bold text-slate-500">Socials</h3>
+          <div className="flex space-x-6 text-slate-500">
             <a href="https://www.linkedin.com/in/hamza-khaled-16a114290/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition duration-300">
               <FaLinkedin className="text-2xl" />
             </a>

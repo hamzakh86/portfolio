@@ -1,4 +1,3 @@
-// src/components/Hero.jsx
 import React, { useEffect, useState } from 'react';
 import { motion } from "framer-motion";
 import { styles } from "../styles";
@@ -43,10 +42,10 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} font-bold text-blue`}>
-            Hi, I'm <span className='text-[#0080FF]'>Hamza</span>
+          <h1 className={`${styles.heroHeadText} font-bold text-black`}>
+            Hi, I'm <span className='text-slate-500'>Hamza</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <p className={`${styles.heroSubText} mt-2 text-slate-600`}>
             {role.split('').map((letter, index) => (
               <span
                 key={index}
@@ -58,7 +57,7 @@ const Hero = () => {
             ))}
             <span className="index-module_cursor__PQg0P">|</span>
             <br className='sm:block hidden' />
-            <h1 className={`${styles.heroHeadText} font-bold text-blue`}>
+            <h1 className={`${styles.heroHeadText} font-bold text-black`}>
               From Tunisia
             </h1>
           </p>

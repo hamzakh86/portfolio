@@ -1,4 +1,3 @@
-//src/components/Feedbacks.jsx
 import React from "react";
 import { motion } from "framer-motion";
 

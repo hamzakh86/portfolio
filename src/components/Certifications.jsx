@@ -1,4 +1,3 @@
-// src/components/Certifications.jsx
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
@@ -77,7 +76,7 @@ const Certifications = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>My Achievements</p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>Certifications.</h2>
+        <h2 className={`${styles.sectionHeadText} text-center text-slate-600`}>Certifications.</h2>
       </motion.div>
 
       <motion.div
@@ -95,15 +94,15 @@ const Certifications = () => {
           {currentCertifications.map((cert, index) => (
             <div
               key={index}
-              className='bg-tertiary p-4 rounded-2xl w-1/3 flex flex-col items-center justify-center'
+              className='bg-secondary p-4 rounded-2xl w-1/3 flex flex-col items-center justify-center'
             >
               <img
                 src={cert.image}
                 alt={cert.title}
                 className='w-full h-50 object-cover mb-4'
               />
-              <h3 className='text-white text-[20px] font-bold text-center'>{cert.title}</h3>
-              <p className='text-secondary text-[14px] text-center'>{cert.description}</p>
+              <h3 className='text-text-primary text-[20px] font-bold text-center'>{cert.title}</h3>
+              <p className='text-text-secondary text-[14px] text-center'>{cert.description}</p>
             </div>
           ))}
         </div>

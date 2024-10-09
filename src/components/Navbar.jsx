@@ -1,4 +1,3 @@
-// src/components/Navbar.jsx
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
@@ -59,14 +58,14 @@ const Navbar = () => {
             }}
           >
             <img src={logo} alt='logo' className='w-8 h-8 object-contain' />
-            <p className='text-primary text-[17px] font-bold cursor-pointer flex '>
+            <p className='text-slate-500 text-[17px] font-bold cursor-pointer flex '>
               Hamza Khaled &nbsp;
-              <span className='sm:block hidden'> | Full Stack JS Developer</span>
+              <span className='sm:block hidden text-slate-700'> | Full Stack JS Developer</span>
             </p>
           </Link>
 
           <CopyToClipboard text="khaledhamza251785@gmail.com" onCopy={handleEmailCopy}>
-            <span className='text-secondary hover:text-primary text-[17px] font-medium cursor-pointer flex items-center gap-3 ml-20'>
+            <span className='text-slate-700 hover:text-primary text-[17px] font-medium cursor-pointer flex items-center gap-3 ml-20'>
               <FaCopy className='text-secondary' />
               khaledhamza251785@gmail.com
             </span>
