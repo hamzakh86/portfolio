@@ -1,3 +1,4 @@
+//src/componetns/Tech.jsx
 import React from "react";
 
 import { BallCanvas } from "./canvas";

@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+// src/components/Hero.jsx
+import React, { useEffect, useState } from 'react';
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 
@@ -12,7 +13,7 @@ const Hero = () => {
     'Open Source Enthusiast',
     'Full Stack Js',
     'Learning In Public'
-    ];
+  ];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -24,17 +25,17 @@ const Hero = () => {
         setTimeout(() => {
           setCurrentIndex((currentIndex + 1) % roles.length);
           setRole('');
-        },1000); // Wait 3 seconds before starting the next role
+        }, 1000);  
       }
-    }, 100); // Change every 100ms
+    }, 100);  
 
     return () => clearInterval(interval);
   }, [role, currentIndex, roles]);
 
   return (
-    <section className={`relative w-full h-screen mx-auto hero-background`}>
+    <section className={`relative w-full h-screen mx-auto hero-background bg-f1f5f1`}>
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#0080FF]' />
@@ -42,8 +43,8 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} font-bold text-blue `}>
-            Hi, I'm <span className='text-[#0080FF]'>Hamza</span> 
+          <h1 className={`${styles.heroHeadText} font-bold text-blue`}>
+            Hi, I'm <span className='text-[#0080FF]'>Hamza</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             {role.split('').map((letter, index) => (
@@ -57,9 +58,9 @@ const Hero = () => {
             ))}
             <span className="index-module_cursor__PQg0P">|</span>
             <br className='sm:block hidden' />
-            <h1 className={`${styles.heroHeadText} font-bold text-blue `}>
+            <h1 className={`${styles.heroHeadText} font-bold text-blue`}>
               From Tunisia
-            </h1> 
+            </h1>
           </p>
         </div>
       </div>

@@ -1,3 +1,4 @@
+// src/components/Sidebar.jsx
 import React, { useEffect, useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { navLinks } from "../constants";
@@ -24,7 +25,7 @@ const Sidebar = () => {
   }, []);
 
   return (
-    <aside className={`w-64 h-screen bg-gray-800 text-white fixed top-0 left-0 overflow-y-auto ${scrolled ? "bg-primary" : "bg-transparent"}`}>
+    <aside className={`w-64 h-screen bg-slate-200 text-primary fixed top-0 left-0 overflow-y-auto`}>
       <div className={`${styles.navbarPadding} flex flex-col items-center justify-start h-full`}>
         <div className="flex flex-col items-center mt-4 mb-6">
           <img
@@ -32,7 +33,7 @@ const Sidebar = () => {
             alt="Profile"
             className="w-35 h-35 rounded-full object-cover border-2 border-white shadow-lg" 
           />
-          <h2 className="text-white text-[16px] font-bold flex mt-4">Hamza Khaled</h2>
+          <h2 className="text-primary text-[16px] font-bold flex mt-4">Hamza Khaled</h2>
         </div>
         <ul className="space-y-4 w-full text-center">
           {navLinks.map((nav, index) => (
