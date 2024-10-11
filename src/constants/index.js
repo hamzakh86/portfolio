@@ -1,4 +1,5 @@
-//src/constants/index.js
+// src/constants/index.js
+
 import {
   mobile,
   backend,
@@ -22,12 +23,12 @@ import {
   portfolio,
   fooddelivery,
   car,
-  jobit,
+  ecomerce,
   realestateimg,
   threejs,
 } from "../assets";
 
- export const navLinks = [
+export const navLinks = [
   {
     id: "about",
     title: "About",
@@ -57,22 +58,23 @@ import {
     title: "Contact",
   },
 ];
+
 const services = [
   {
     title: "Full Stack Js Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "Frontend Developer",
+    icon: Front,
   },
   {
     title: "Backend Developer",
     icon: backend,
   },
   {
-    title: "Frontend Developer",
-    icon: Front,
+    title: "React Native Developer",
+    icon: mobile,
   },
 ];
 
@@ -132,7 +134,6 @@ const technologies = [
 ];
 
 const experiences = [
-
   {
     title: "Front End Developer",
     company_name: "celestial wave digital ",
@@ -148,7 +149,7 @@ const experiences = [
     ],
   },
   {
-    title: "Full stack Developer",
+    title: "Full stack Js Developer",
     company_name: "Gomycode",
     icon: gomycode,
     iconBg: "#E6DEDD",
@@ -229,7 +230,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: ecomerce,
     source_code_link: "https://github.com/",
   },
   {
@@ -253,8 +254,6 @@ const projects = [
     image: realestateimg,
     source_code_link: "https://github.com/",
   },
-
-
   {
     name: " Food Delivery",
     description:
@@ -276,11 +275,6 @@ const projects = [
     image: fooddelivery,
     source_code_link: "https://github.com/",
   },
-
-
-
-
-
   {
     name: "Portfolio Website",
     description:
@@ -302,10 +296,6 @@ const projects = [
     image: portfolio,
     source_code_link: "https://github.com/",
   },
-
-
-
-
   {
     name: "Chat Application",
     description:
@@ -327,10 +317,55 @@ const projects = [
     image: chat,
     source_code_link: "https://github.com/",
   },
-
-
-
-
 ];
 
-export {  services, technologies, experiences, testimonials, projects };
+export const certifications = [
+  {
+    title: "GOMYCODE",
+    image: "/assets/certification1.png",
+    description: "The Full-Stack Javascript Bootcamp Graduate",
+  },
+  {
+    title: "freeCodeCamp",
+    image: "/assets/certification2.png",
+    description: "Responsive Web Design",
+  },
+  {
+    title: "freeCodeCamp",
+    image: "/assets/certification3.png",
+    description: "JavaScript Algorithms and Data Structures (Beta)",
+  },
+  {
+    title: "freeCodeCamp",
+    image: "/assets/certification4.png",
+    description: "Front End Development Libraries",
+  },
+  {
+    title: "freeCodeCamp",
+    image: "/assets/certification5.png",
+    description: "Back End Development and APIs",
+  },
+  {
+    title: "Postman",
+    image: "/assets/certification6.png",
+    description: "Postman API Fundamentals Student Expert",
+  },
+  {
+    title: "Certifprof",
+    image: "/assets/certification7.png",
+    description: "Scrum Foundation Professional Certificate SFPC (v2020) - English -",
+  },
+  {
+    title: "SCRUMstudy",
+    image: "/assets/certification8.png",
+    description: "Scrum for Ops and DevOps Fundamentals",
+  },
+  {
+    title: "SCRUMstudy",
+    image: "/assets/certification9.png",
+    description: "Scrum Fundamentals Certified (SFC)",
+  },
+  // Add more certifications as needed
+];
+
+export { services, technologies, experiences, testimonials, projects };

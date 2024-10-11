@@ -42,22 +42,22 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} font-bold text-black`}>
-            Hi, I'm <span className='text-slate-500'>Hamza</span>
+          <h1 className={`${styles.heroHeadText} font-bold text-blue`}>
+            <span style={{ color: 'rgb(51 65 85 / var(--tw-text-opacity))' }}>Hi, I'm</span> <span style={{ color: 'rgb(100 116 139 / var(--tw-text-opacity))' }}>Hamza</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-slate-600`}>
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             {role.split('').map((letter, index) => (
               <span
                 key={index}
                 className="letter"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                style={{ animationDelay: `${index * 0.1}s`, color: 'rgb(71 85 105 / var(--tw-text-opacity))' }}
               >
                 {letter}
               </span>
             ))}
             <span className="index-module_cursor__PQg0P">|</span>
             <br className='sm:block hidden' />
-            <h1 className={`${styles.heroHeadText} font-bold text-black`}>
+            <h1 className={`${styles.heroHeadText} font-bold text-blue`} style={{ color: 'rgb(51 65 85 / var(--tw-text-opacity))' }}>
               From Tunisia
             </h1>
           </p>

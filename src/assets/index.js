@@ -32,7 +32,7 @@ import fooddelivery from "./fooddelivery.png";
 import portfolio from "./portfolio.png";
 import car from "./car.png";
 
-import jobit from "./jobit.png";
+import ecomerce from "./ecomerce.png";
 import realestateimg from "./realestateimg.png";
 
 export {
@@ -65,6 +65,6 @@ export {
   car,
   portfolio,
   fooddelivery,
-  jobit,
+  ecomerce,
   realestateimg,
 };

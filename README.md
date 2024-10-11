@@ -151,7 +151,7 @@ import {
   tesla,
   cwd,
   chat,
-  jobit,
+  ecomerce,
   realestateimg,
   threejs,
 } from "../assets";
@@ -353,7 +353,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: ecomerce,
     source_code_link: "https://github.com/",
   },
   {

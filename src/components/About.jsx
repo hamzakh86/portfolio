@@ -12,6 +12,7 @@ const ServiceCard = ({ index, title, icon }) => (
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full bg-secondary p-[1px] rounded-[20px] shadow-card'
+      style={{ backgroundColor: 'rgb(226 232 240 / var(--tw-bg-opacity))' }}
     >
       <div
         options={{
@@ -27,7 +28,7 @@ const ServiceCard = ({ index, title, icon }) => (
           className='w-16 h-16 object-contain'
         />
 
-        <h3 className='text-text-primary text-[20px] font-bold text-center'>
+        <h3 className='text-text-primary text-[20px] font-bold text-center' style={{ color: title === "Frontend Developer" || title === "Backend Developer" || title === "React Native Developer" || title === "Full Stack Js Developer" ? 'white' : 'inherit' }}>
           {title}
         </h3>
       </div>
@@ -39,13 +40,14 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={`${styles.sectionHeadText} text-slate-600`}>Overview.</h2>
+        <p className={styles.sectionSubText} style={{ color: 'rgb(71 85 105 / var(--tw-text-opacity))' }}>Introduction</p>
+        <h2 className={styles.sectionHeadText} style={{ color: 'rgb(71 85 105 / var(--tw-text-opacity))' }}>Overview.</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-slate-600 text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-text-secondary text-[17px] max-w-3xl leading-[30px]'
+        style={{ color: 'rgb(71 85 105 / var(--tw-text-opacity))' }}
       >
         I'm a skilled software developer with experience in TypeScript and
         JavaScript, and expertise in frameworks like React.js, Next.js, Node.js, Nest.js and

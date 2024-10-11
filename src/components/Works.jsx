@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
@@ -86,11 +86,27 @@ const Works = () => {
 
   const currentProjects = getProjectsForPage(currentIndex);
 
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === "ArrowLeft") {
+        handlePrev();
+      } else if (event.key === "ArrowRight") {
+        handleNext();
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [handlePrev, handleNext]);
+
   return (
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>My work</p>
-        <h2 className={`${styles.sectionHeadText} text-center text-slate-600`}>Projects.</h2>
+        <h2 className={`${styles.sectionHeadText} text-center`} style={{ color: 'rgb(71 85 105 / var(--tw-text-opacity))' }}>Projects.</h2>
       </motion.div>
 
       <div className='w-full flex'>
@@ -125,7 +141,7 @@ const Works = () => {
 
         <button
           onClick={handleNext}
-          className='absolute right-0 top-1/2 transform -translate-y-1/2  -translate-x-14bg -black-100 text-white p-3 rounded-full shadow-lg hover:bg-black-200 transition duration-300 hover:shadow-xl'
+          className='absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1 bg-black-100 text-white p-3 rounded-full shadow-lg hover:bg-black-200 transition duration-300 hover:shadow-xl'
         >
           <FaArrowRight className='text-xl' />
         </button>

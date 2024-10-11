@@ -1,58 +1,12 @@
-import React, { useState } from "react";
+// src/components/Certifications.js
+
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-
-const certifications = [
-  {
-    title: "GOMYCODE",
-    image: "/assets/certification1.png",
-    description: "The Full-Stack Javascript Bootcamp Graduate",
-  },
-  {
-    title: "freeCodeCamp",
-    image: "/assets/certification2.png",
-    description: "Responsive Web Design",
-  },
-  {
-    title: "freeCodeCamp",
-    image: "/assets/certification3.png",
-    description: "JavaScript Algorithms and Data Structures (Beta)",
-  },
-  {
-    title: "freeCodeCamp",
-    image: "/assets/certification4.png",
-    description: "Front End Development Libraries",
-  },
-  {
-    title: "freeCodeCamp",
-    image: "/assets/certification5.png",
-    description: "Back End Development and APIs",
-  },
-  {
-    title: "Postman",
-    image: "/assets/certification6.png",
-    description: "Postman API Fundamentals Student Expert",
-  },
-  {
-    title: "Certifprof",
-    image: "/assets/certification7.png",
-    description: " Scrum Foundation Professional Certificate SFPC (v2020) - English -",
-  },
-  {
-    title: "SCRUMstudy",
-    image: "/assets/certification8.png",
-    description: "Scrum for Ops and DevOps Fundamentals",
-  },
-  {
-    title: "SCRUMstudy",
-    image: "/assets/certification9.png",
-    description: "Scrum Fundamentals Certified (SFC)",
-  },
-  // Add more certifications as needed
-];
+import { certifications } from "../constants"; // Import the certifications array
 
 const Certifications = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -72,11 +26,27 @@ const Certifications = () => {
 
   const currentCertifications = getCertificationsForPage(currentIndex);
 
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === "ArrowLeft") {
+        handlePrev();
+      } else if (event.key === "ArrowRight") {
+        handleNext();
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [handlePrev, handleNext]);
+
   return (
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>My Achievements</p>
-        <h2 className={`${styles.sectionHeadText} text-center text-slate-600`}>Certifications.</h2>
+        <h2 className={`${styles.sectionHeadText} text-center`} style={{ color: 'rgb(71 85 105 / var(--tw-text-opacity))' }}>Certifications.</h2>
       </motion.div>
 
       <motion.div
@@ -101,8 +71,8 @@ const Certifications = () => {
                 alt={cert.title}
                 className='w-full h-50 object-cover mb-4'
               />
-              <h3 className='text-text-primary text-[20px] font-bold text-center'>{cert.title}</h3>
-              <p className='text-text-secondary text-[14px] text-center'>{cert.description}</p>
+              <h3 className='text-white text-[20px] font-bold text-center'>{cert.title}</h3>
+              <p className='text-text-primary text-[14px] text-center'>{cert.description}</p>
             </div>
           ))}
         </div>

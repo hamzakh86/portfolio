@@ -11,10 +11,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
-  background-color: #f1f5f1; /* bg-primary */
-  color: #000000; /* text-primary */
-}
 
 .hash-span {
   margin-top: -100px;
