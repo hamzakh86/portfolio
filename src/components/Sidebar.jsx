@@ -1,3 +1,4 @@
+//src/components/Sidebar.jsx
 import React, { useEffect, useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { navLinks } from "../constants";
@@ -45,6 +46,7 @@ const Sidebar = () => {
                   active === nav.title ? "text-white" : "text-secondary"
                 }`}
                 onClick={() => setActive(nav.title)}
+                style={{ cursor: 'pointer' }} 
               >
                 <span className="text-xl">
                   {index === 0 ? <FaHome /> : index === 1 ? <FaUser /> : index === 2 ? <FaBriefcase /> : index === 3 ? <FaCode /> : index === 4 ? <FaCertificate /> : index === 5 ? <FaComments /> : <FaEnvelope />}

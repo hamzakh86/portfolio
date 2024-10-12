@@ -7,7 +7,6 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-
 import css from "./tech/css.png";
 import nest from "./tech/nest.png";
 import next from "./tech/next.png";
@@ -21,17 +20,14 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-
 import gomycode from "./company/gomycode.png";
 import cwd from "./company/cwd.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-
 import chat from "./chat.png";
 import fooddelivery from "./fooddelivery.png";
 import portfolio from "./portfolio.png";
 import car from "./car.png";
-
 import ecomerce from "./ecomerce.png";
 import realestateimg from "./realestateimg.png";
 

@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from 'react';
+//src/components/Hero.jsx
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
+import heroImage from "../assets/herohamza.png"; 
 
 const Hero = () => {
   const [role, setRole] = useState('');
@@ -9,9 +11,10 @@ const Hero = () => {
   const roles = [
     'A Full Stack JS Developer',
     'Freelancer',
-    'Open Source Enthusiast',
+    'Frontend Developer',
     'Full Stack Js',
-    'Learning In Public'
+    'Backend Developer',
+    'Mobile Developer'
   ];
 
   useEffect(() => {
@@ -32,7 +35,7 @@ const Hero = () => {
   }, [role, currentIndex, roles]);
 
   return (
-    <section className={`relative w-full h-screen mx-auto hero-background bg-f1f5f1`}>
+    <section className={`relative w-full h-screen mx-auto ${styles.heroBackground}`}>
       <div
         className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -41,7 +44,7 @@ const Hero = () => {
           <div className='w-1 sm:h-80 h-40 bleu-gradient' />
         </div>
 
-        <div>
+        <div className='flex-1'>
           <h1 className={`${styles.heroHeadText} font-bold text-blue`}>
             <span style={{ color: 'rgb(51 65 85 / var(--tw-text-opacity))' }}>Hi, I'm</span> <span style={{ color: 'rgb(100 116 139 / var(--tw-text-opacity))' }}>Hamza</span>
           </h1>
@@ -61,6 +64,14 @@ const Hero = () => {
               From Tunisia
             </h1>
           </p>
+        </div>
+
+        <div className='flex-1 flex justify-end items-center'>
+          <img
+            src={heroImage}
+            alt="Hero Hamza"
+            className={styles.heroImage}
+          />
         </div>
       </div>
 

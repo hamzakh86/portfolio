@@ -9,7 +9,7 @@ import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
-import Certifications from "./Certifications"; // Import the Certifications component
+import Certifications from "./Certifications"; 
 
 export {
   Hero,
@@ -25,5 +25,5 @@ export {
   BallCanvas, 
   ComputersCanvas, 
   StarsCanvas,
-  Certifications // Export the Certifications component
+  Certifications 
 };

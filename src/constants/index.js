@@ -1,5 +1,4 @@
 // src/constants/index.js
-
 import {
   mobile,
   backend,
@@ -139,13 +138,13 @@ const experiences = [
     company_name: "celestial wave digital ",
     icon: cwd,
     iconBg: "#37517e",
-    date: "Jun 2024 - Present",
+    date: "Jun 2024 - October 2024",
     points: [
-      "Building intuitive and responsive user interface components and layouts.",
-      "Collaborating closely with back-end teams to integrate APIs, manage data from servers, and ensure seamless data flow.",
-      "Continuously optimizing front-end performance to improve load times and enhance user experience.",
-      "Using version control systems like Git to track code changes and collaborate efficiently with other developers.",
-      "Participating in code reviews and adhering to coding standards to maintain clean, efficient, and maintainable code.",
+      "Developed and integrated user interfaces based on design specifications to create intuitive, responsive layouts.",
+      "Implemented API integration to ensure smooth data exchange between front-end and back-end systems.",
+      "Ensured adherence to coding standards and best practices, including web accessibility and performance optimization.",
+      "Integrated design elements into the codebase to deliver cohesive user experiences.",
+      "Followed industry standards for version control (Git) to manage code changes and maintain collaboration across the development team.",
     ],
   },
   {
@@ -155,10 +154,10 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Sep 2023 - Fev 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed and maintained web applications using React.js and related technologies, ensuring efficient and scalable solutions.",
+      "Collaborated with cross-functional teams, including designers, product managers, and developers, to deliver high-quality digital products.",
+      "Implemented responsive design to ensure applications were optimized for various devices and ensured cross-browser compatibility.",
+      "Actively participated in code reviews, providing and receiving constructive feedback to maintain clean, efficient, and maintainable code.",
     ],
   },
 ];
@@ -326,9 +325,19 @@ export const certifications = [
     description: "The Full-Stack Javascript Bootcamp Graduate",
   },
   {
+    title: "SCRUMstudy",
+    image: "/assets/certification8.png",
+    description: "Scrum for Ops and DevOps Fundamentals",
+  },
+  {
     title: "freeCodeCamp",
     image: "/assets/certification2.png",
     description: "Responsive Web Design",
+  },
+  {
+    title: "Certifprof",
+    image: "/assets/certification7.png",
+    description: "Scrum Foundation Professional Certificate SFPC (v2020) - English -",
   },
   {
     title: "freeCodeCamp",
@@ -351,21 +360,10 @@ export const certifications = [
     description: "Postman API Fundamentals Student Expert",
   },
   {
-    title: "Certifprof",
-    image: "/assets/certification7.png",
-    description: "Scrum Foundation Professional Certificate SFPC (v2020) - English -",
-  },
-  {
-    title: "SCRUMstudy",
-    image: "/assets/certification8.png",
-    description: "Scrum for Ops and DevOps Fundamentals",
-  },
-  {
     title: "SCRUMstudy",
     image: "/assets/certification9.png",
     description: "Scrum Fundamentals Certified (SFC)",
   },
-  // Add more certifications as needed
 ];
 
 export { services, technologies, experiences, testimonials, projects };

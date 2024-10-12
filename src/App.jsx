@@ -3,7 +3,7 @@ import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer"; // Import the Footer component
+import Footer from "./components/Footer";
 import { About, Contact, Experience, Feedbacks, Hero, Tech, Works, StarsCanvas, Certifications } from "./components";
 
 const App = () => {
@@ -36,7 +36,7 @@ const App = () => {
             <Contact />
             <StarsCanvas />
           </section>
-          <Footer /> {/* Add the Footer component here */}
+          <Footer /> 
         </div>
       </div>
     </BrowserRouter>

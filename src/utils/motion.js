@@ -1,3 +1,4 @@
+//src/utils/motions.js
 export const textVariant = (delay) => {
   return {
     hidden: {

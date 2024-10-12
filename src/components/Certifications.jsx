@@ -1,12 +1,11 @@
-// src/components/Certifications.js
-
+// src/components/Certifications.jsx
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import { certifications } from "../constants"; // Import the certifications array
+import { certifications } from "../constants";  
 
 const Certifications = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
