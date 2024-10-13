@@ -1,9 +1,9 @@
 // src/styles.js
 const styles = {
-  paddingX: "sm:px-16 px-6",
+  paddingX: "sm:px-16 px-4",
   paddingY: "sm:py-16 py-6",
-  padding: "sm:px-16 px-6 sm:py-16 py-10",
-  navbarPadding: "sm:px-16 px-6 py-5", 
+  padding: "sm:px-16 px-4 sm:py-16 py-10",
+  navbarPadding: "sm:px-16 px-4 py-5",
 
   heroHeadText:
     "font-black text-white lg:text-[60px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2",
@@ -15,7 +15,7 @@ const styles = {
   sectionSubText:
     "sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider",
 
-    heroImage: "w-4/5 h-1/2 object-cover rounded-lg ",
+  heroImage: "w-4/5 h-1/2 object-cover rounded-lg",
 };
 
 export { styles };

@@ -54,16 +54,16 @@ const Certifications = () => {
       >
         <button
           onClick={handlePrev}
-          className='absolute left-0 top-1/2 transform -translate-y-1/2 bg-black-100 text-white p-2 rounded-full hover:bg-black-200 transition duration-300'
+          className='hidden sm:block absolute left-0 top-1/2 transform -translate-y-1/2 bg-black-100 text-white p-2 rounded-full hover:bg-black-200 transition duration-300'
         >
           <FaArrowLeft />
         </button>
 
-        <div className='flex space-x-4 w-full'>
+        <div className='flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 w-full'>
           {currentCertifications.map((cert, index) => (
             <div
               key={index}
-              className='bg-secondary p-4 rounded-2xl w-1/3 flex flex-col items-center justify-center'
+              className='bg-secondary p-4 rounded-2xl w-full sm:w-1/3 flex flex-col items-center justify-center'
             >
               <img
                 src={cert.image}
@@ -78,7 +78,7 @@ const Certifications = () => {
 
         <button
           onClick={handleNext}
-          className='absolute right-0 top-1/2 transform -translate-y-1/2 bg-black-100 text-white p-2 rounded-full hover:bg-black-200 transition duration-300'
+          className='hidden sm:block absolute right-0 top-1/2 transform -translate-y-1/2 bg-black-100 text-white p-2 rounded-full hover:bg-black-200 transition duration-300'
         >
           <FaArrowRight />
         </button>

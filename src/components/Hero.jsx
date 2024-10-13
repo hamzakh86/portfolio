@@ -1,20 +1,20 @@
-//src/components/Hero.jsx
+// src/components/Hero.jsx
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import heroImage from "../assets/herohamza.png"; 
+import heroImage from "../assets/herohamza.png";
 
 const Hero = () => {
-  const [role, setRole] = useState('');
+  const [role, setRole] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const roles = [
-    'A Full Stack JS Developer',
-    'Freelancer',
-    'Frontend Developer',
-    'Full Stack Js',
-    'Backend Developer',
-    'Mobile Developer'
+    "A Full Stack JS Developer",
+    "Freelancer",
+    "Frontend Developer",
+    "Full Stack Js",
+    "Backend Developer",
+    "Mobile Developer",
   ];
 
   useEffect(() => {
@@ -26,58 +26,66 @@ const Hero = () => {
         clearInterval(interval);
         setTimeout(() => {
           setCurrentIndex((currentIndex + 1) % roles.length);
-          setRole('');
-        }, 1000);  
+          setRole("");
+        }, 1000);
       }
-    }, 100);  
+    }, 100);
 
     return () => clearInterval(interval);
   }, [role, currentIndex, roles]);
 
   return (
-    <section className={`relative w-full h-screen mx-auto ${styles.heroBackground}`}>
+    <section
+      className={`relative w-full h-screen mx-auto ${styles.heroBackground}`}
+    >
       <div
-        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[100px] max-w-7xl mx-auto ${styles.paddingX} flex flex-col sm:flex-row items-center gap-5`}
       >
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#0080FF]' />
-          <div className='w-1 sm:h-80 h-40 bleu-gradient' />
+        <div className="flex-1 flex justify-center items-center order-1 sm:order-2">
+          <img
+            src={heroImage}
+            alt="Hero Hamza"
+            className="w-full h-auto max-w-xs sm:max-w-sm md:max-w-md"
+          />
         </div>
 
-        <div className='flex-1'>
+        <div className="flex-1 text-center sm:text-left order-2 sm:order-1">
           <h1 className={`${styles.heroHeadText} font-bold text-blue`}>
-            <span style={{ color: 'rgb(51 65 85 / var(--tw-text-opacity))' }}>Hi, I'm</span> <span style={{ color: 'rgb(100 116 139 / var(--tw-text-opacity))' }}>Hamza</span>
+            <span style={{ color: "rgb(51 65 85 / var(--tw-text-opacity))" }}>
+              Hi, I'm
+            </span>{" "}
+            <span style={{ color: "rgb(100 116 139 / var(--tw-text-opacity))" }}>
+              Hamza
+            </span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            {role.split('').map((letter, index) => (
+            {role.split("").map((letter, index) => (
               <span
                 key={index}
                 className="letter"
-                style={{ animationDelay: `${index * 0.1}s`, color: 'rgb(71 85 105 / var(--tw-text-opacity))' }}
+                style={{
+                  animationDelay: `${index * 0.1}s`,
+                  color: "rgb(71 85 105 / var(--tw-text-opacity))",
+                }}
               >
                 {letter}
               </span>
             ))}
             <span className="index-module_cursor__PQg0P">|</span>
-            <br className='sm:block hidden' />
-            <h1 className={`${styles.heroHeadText} font-bold text-blue`} style={{ color: 'rgb(51 65 85 / var(--tw-text-opacity))' }}>
+            <br className="sm:block hidden" />
+            <h1
+              className={`${styles.heroHeadText} font-bold text-blue`}
+              style={{ color: "rgb(51 65 85 / var(--tw-text-opacity))" }}
+            >
               From Tunisia
             </h1>
           </p>
         </div>
-
-        <div className='flex-1 flex justify-end items-center'>
-          <img
-            src={heroImage}
-            alt="Hero Hamza"
-            className={styles.heroImage}
-          />
-        </div>
       </div>
 
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
-        <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+        <a href="#about">
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
               animate={{
                 y: [0, 24, 0],
@@ -87,7 +95,7 @@ const Hero = () => {
                 repeat: Infinity,
                 repeatType: "loop",
               }}
-              className='w-3 h-3 rounded-full bg-secondary mb-1'
+              className="w-3 h-3 rounded-full bg-secondary mb-1"
             />
           </div>
         </a>

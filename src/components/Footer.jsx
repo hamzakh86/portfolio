@@ -1,4 +1,4 @@
-//src/components/Footer.jsx
+// src/components/Footer.jsx
 import React, { useState } from "react";
 import { FaLinkedin, FaGithub, FaInstagram, FaFacebook, FaEnvelope } from "react-icons/fa";
 import { CopyToClipboard } from "react-copy-to-clipboard";
@@ -14,23 +14,25 @@ const Footer = () => {
 
   return (
     <footer className="bg-slate-200 text-primary py-6">
-      <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-        <div className="flex items-center space-x-4">
+      <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-start md:items-center space-y-6 md:space-y-0">
+        <div className="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-4">
           <CopyToClipboard text="khaledhamza251785@gmail.com" onCopy={handleEmailCopy}>
-            <div className="cursor-pointer text-slate-700 hover:text-blue-500 transition-colors duration-300 flex items-center gap-2">
-              <FaEnvelope className="text-2xl" />
-              <h1 className="text-lg font-semibold">Email : </h1>
-              <span className="text-lg">khaledhamza251785@gmail.com</span>
+            <div className="cursor-pointer text-slate-700 hover:text-blue-500 transition-colors duration-300 flex flex-col md:flex-row items-start md:items-center gap-2">
+              <div className="flex items-center gap-2">
+                <FaEnvelope className="text-2xl" />
+                <h1 className="text-lg font-semibold">Email :</h1>
+              </div>
+              <span className="text-lg break-all">khaledhamza251785@gmail.com</span>
             </div>
           </CopyToClipboard>
           {emailCopied && (
-            <div className="text-green-500 text-sm flex items-center gap-1 absolute bottom-20 left-1/2 transform -translate-x-1/2">
+            <div className="text-green-500 text-sm flex items-center gap-1">
               Email Copié <GoCheckCircle className="text-green-500" />
             </div>
           )}
         </div>
 
-        <div className="flex items-center space-x-6">
+        <div className="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-6">
           <h3 className="text-lg font-bold text-slate-500">Socials</h3>
           <div className="flex space-x-6 text-slate-500">
             <a href="https://www.linkedin.com/in/hamza-khaled-16a114290/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition duration-300">

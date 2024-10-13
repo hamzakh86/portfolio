@@ -1,15 +1,14 @@
-//src/components/About.jsx
+// src/components/About.jsx
 import React from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
+  <Tilt className='w-full sm:w-[250px]'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full bg-secondary p-[1px] rounded-[20px] shadow-card'
@@ -57,7 +56,7 @@ const About = () => {
         real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className='mt-20 flex flex-wrap gap-10 justify-center'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

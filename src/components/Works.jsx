@@ -1,9 +1,8 @@
-//src/components/Works.jsx
+// src/components/Works.jsx
 import React, { useState, useEffect } from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
@@ -129,12 +128,12 @@ const Works = () => {
       >
         <button
           onClick={handlePrev}
-          className='absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-14 bg-black-100 text-white p-3 rounded-full shadow-lg hover:bg-black-200 transition duration-300 hover:shadow-xl'
+          className='hidden sm:block absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-14 bg-black-100 text-white p-3 rounded-full shadow-lg hover:bg-black-200 transition duration-300 hover:shadow-xl'
         >
           <FaArrowLeft className='text-xl' />
         </button>
 
-        <div className='flex space-x-4 w-full'>
+        <div className='flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 w-full'>
           {currentProjects.map((project, index) => (
             <ProjectCard key={`project-${index}`} index={index} {...project} />
           ))}
@@ -142,7 +141,7 @@ const Works = () => {
 
         <button
           onClick={handleNext}
-          className='absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1 bg-black-100 text-white p-3 rounded-full shadow-lg hover:bg-black-200 transition duration-300 hover:shadow-xl'
+          className='hidden sm:block absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1 bg-black-100 text-white p-3 rounded-full shadow-lg hover:bg-black-200 transition duration-300 hover:shadow-xl'
         >
           <FaArrowRight className='text-xl' />
         </button>

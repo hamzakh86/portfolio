@@ -11,7 +11,7 @@ const App = () => {
     <BrowserRouter>
       <div className='flex bg-primary'>
         <Sidebar />
-        <div className='flex-1 ml-64'>
+        <div className='flex-1 md:ml-64'>
           <Navbar />
           <Hero />
           <section id='about'>
