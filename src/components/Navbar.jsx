@@ -75,7 +75,7 @@ const Navbar = () => {
 
           <button
             onClick={handleDownloadCV}
-            className="bg-[#0080FF] text-white px-4 py-1 rounded-md text-[17px] font-medium cursor-pointer flex items-center gap-2 ml-6"
+            className="bg-[#0080FF] text-white px-4 py-1 rounded-md text-[17px] font-medium cursor-pointer flex items-center gap-2 ml-40 mr-60"
           >
             Download CV <FaDownload className="text-white" />
           </button>
@@ -100,7 +100,7 @@ const Navbar = () => {
       {toggle && (
         <div className="sm:hidden absolute top-16 left-0 w-full bg-slate-200 p-4 z-10">
           <div className="flex flex-col items-center">
-            <p className="text-slate-500 text-[15px] sm:text-[17px] font-bold text-center break-words">
+            <p className="text-slate-500 text-[15px] sm:text-[17px] font-bold text-start break-words">
               Hamza Khaled | Full Stack JS Developer
             </p>
 
@@ -108,7 +108,7 @@ const Navbar = () => {
               text="khaledhamza251785@gmail.com"
               onCopy={handleEmailCopy}
             >
-              <span className="text-slate-700 hover:text-primary text-[15px] sm:text-[17px] font-medium cursor-pointer flex items-center gap-2 mt-2 break-all">
+              <span className="text-slate-700 hover:text-primary text-[15px] sm:text-[17px] font-medium cursor-pointer flex items-start gap-2 mt-2 break-all">
                 <FaCopy className="text-secondary" />
                 khaledhamza251785@gmail.com
               </span>
@@ -116,7 +116,7 @@ const Navbar = () => {
 
             <button
               onClick={handleDownloadCV}
-              className="bg-[#0080FF] text-white px-2 py-1 mt-2 rounded-md text-[15px] sm:text-[17px] font-medium flex items-center gap-2"
+              className="bg-[#0080FF] text-white px-2 py-1 mt-2 rounded-md text-[15px] sm:text-[17px] font-medium flex items-start gap-2"
             >
               Download CV <FaDownload className="text-white" />
             </button>

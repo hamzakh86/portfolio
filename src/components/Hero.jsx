@@ -39,13 +39,13 @@ const Hero = () => {
       className={`relative w-full h-screen mx-auto ${styles.heroBackground}`}
     >
       <div
-        className={`absolute inset-0 top-[100px] max-w-7xl mx-auto ${styles.paddingX} flex flex-col sm:flex-row items-center gap-5`}
+        className={`absolute inset-0 top-[30px] max-w-7xl mx-auto ${styles.paddingX} flex flex-col sm:flex-row items-center gap-5`}
       >
         <div className="flex-1 flex justify-center items-center order-1 sm:order-2">
           <img
             src={heroImage}
             alt="Hero Hamza"
-            className="w-full h-auto max-w-xs sm:max-w-sm md:max-w-md"
+            className={`${styles.heroImage}`} 
           />
         </div>
 
@@ -83,7 +83,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+      <div className="absolute xs:bottom-1 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div

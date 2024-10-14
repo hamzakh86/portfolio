@@ -26,6 +26,7 @@ import {
   realestateimg,
   threejs,
 } from "../assets";
+import sabrine from "../assets/testimonials/sabrine.jpg";
 
 export const navLinks = [
   {
@@ -165,11 +166,11 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "I am thrilled to share my experience with my student, who has truly excelled in web development. From the very beginning, he displayed an impressive passion for the field. His dedication to mastering HTML, CSS, and JavaScript, along with advanced technologies like React and Node.js, has been remarkable. What sets him apart is his exceptional problem-solving skills and innovative approach. Each project he undertakes showcases his growth, both technically and creatively. Today, he stands out as a skilled web developer, ready to tackle any challenge in the ever-evolving tech landscape.",
+    name: "Sabrine Loussaief",
+    designation: " Instructor",
+    company: "GOMYCODE",
+    image: sabrine,
   },
   {
     testimonial:
