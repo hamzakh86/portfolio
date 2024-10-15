@@ -27,6 +27,9 @@ import {
   threejs,
 } from "../assets";
 import sabrine from "../assets/testimonials/sabrine.jpg";
+import amine from "../assets/testimonials/amine.jpg";
+import sarah from "../assets/testimonials/sarah.jpg";
+
 
 export const navLinks = [
   {
@@ -174,19 +177,19 @@ const testimonials = [
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "I've had the pleasure of working closely with Hamza on multiple projects at Celestial Wave degital . As a frontend developer, he consistently demonstrates an impressive ability to translate complex UI/UX designs into highly functional, user-friendly web applications.",
+    name: "Mohamed amine sefi",
+    designation: "UI/UX Designer",
+    company: "CWD",
+    image: amine,
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "I’ve had the pleasure of working alongside Hamza on several projects and I can confidently say that he is an exceptional developer His ability to solve complex problems with clean efficient code paired with a strong sense of design and user experience truly sets him apart Whether it's creating robust backend systems building dynamic user interfaces or Hamza consistently delivers high-quality work His passion for technology and continuous learning is evident in every project he tackles I highly recommend Hamza to anyone seeking a dedicated and skilled developer",
+    name: "Sarra Fersi",
+    designation: "Intern",
+    company: "CWD",
+    image: sarah,
   },
 ];
 
