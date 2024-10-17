@@ -16,6 +16,7 @@ module.exports = {
         "text-secondary": "#CCCCCC",
         "bg-primary": "#f1f5f1",
         "bg-secondary": "#222222",
+        "gris-works": "#bdbdbd",
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",

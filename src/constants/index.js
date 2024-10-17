@@ -21,7 +21,7 @@ import {
   chat,
   portfolio,
   fooddelivery,
-  car,
+  reactnative,
   ecomerce,
   realestateimg,
   threejs,
@@ -195,83 +195,102 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Showcase",
+    name: "Full Stack React Native App",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Self-learning Project – Developed with React Native, Animatable, and Appwrite. The app enables seamless AI video sharing, emphasizing design and functionality. Tools: React Native, Expo, Nativewind, Animatable, Appwrite.",
     tags: [
       {
-        name: "react",
+        name: "react-native",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "appwrite",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "expo",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "nativewind",
         color: "pink-text-gradient",
       },
     ],
-    image: car,
+    image: reactnative, 
     source_code_link: "https://github.com/",
+    description_class: "react-native-app" 
   },
   {
     name: "E-Commerce Website",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: ecomerce,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "A Modern Real Estate",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Developed a full-stack e-commerce platform with Next.js 14, featuring an admin dashboard and CMS for managing products, users, and orders. The platform supports secure payments via Stripe and is optimized for scalability.",
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "graphql",
         color: "green-text-gradient",
       },
       {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "typescript",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "stripe",
+        color: "purple-text-gradient",
       },
     ],
-    image: realestateimg,
+    image: ecomerce,
     source_code_link: "https://github.com/",
+    description_class: "ecommerce-website" 
   },
   {
-    name: " Food Delivery",
+    name: "A Modern Real Estate",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Built a real estate marketplace using the MERN stack, with features like property listing management (CRUD), image uploads, and advanced search functionality. Tools: MongoDB, Express.js, React.js, Node.js, JWT, Redux Toolkit.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
       {
         name: "mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "expressjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "jwt",
+        color: "red-text-gradient",
+      },
+   
+    ],
+    image: realestateimg,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Food Delivery",
+    description:
+      "Developed a comprehensive food delivery web application utilizing Microservice Architecture, featuring distinct applications for Admin, User, Restaurant Owner, and Delivery Personnel. Tools: Next.js, Tailwind CSS, TypeScript.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "tailwindcss",
         color: "pink-text-gradient",
       },
     ],
@@ -281,19 +300,23 @@ const projects = [
   {
     name: "Portfolio Website",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Designed a responsive portfolio website using Three.js for 3D models and Framer Motion for interactivity. Ensured performance optimization and cross-device compatibility. Tools: React.js, Three.js, TailwindCSS, Framer Motion.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "threejs",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "tailwindcss",
         color: "pink-text-gradient",
+      },
+      {
+        name: "framermotion",
+        color: "purple-text-gradient",
       },
     ],
     image: portfolio,
@@ -302,25 +325,31 @@ const projects = [
   {
     name: "Chat Application",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Developed a real-time chat application using the MERN stack, featuring online indicators, file uploads/attachments, and auto-scrolling for user messages. Tools: MongoDB, Express.js, React.js, Node.js, WebSockets.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
       {
         name: "mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "expressjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react",
         color: "pink-text-gradient",
       },
+      {
+        name: "nodejs",
+        color: "yellow-text-gradient",
+      },
+    
     ],
     image: chat,
     source_code_link: "https://github.com/",
   },
 ];
+
 
 export const certifications = [
   {
@@ -334,15 +363,16 @@ export const certifications = [
     description: "Scrum for Ops and DevOps Fundamentals",
   },
   {
-    title: "freeCodeCamp",
-    image: "/assets/certification2.png",
-    description: "Responsive Web Design",
-  },
-  {
     title: "Certifprof",
     image: "/assets/certification7.png",
     description: "Scrum Foundation Professional Certificate SFPC (v2020) - English -",
   },
+  {
+    title: "freeCodeCamp",
+    image: "/assets/certification2.png",
+    description: "Responsive Web Design",
+  },
+
   {
     title: "freeCodeCamp",
     image: "/assets/certification3.png",

@@ -1,4 +1,3 @@
-/* src/index.css */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
@@ -22,29 +21,16 @@ body {
   display: block;
 }
 
-
 .black-gradient {
   background: #000000; 
-  background: -webkit-linear-gradient(
-    to right,
-    #434343,
-    #000000
-  );  
-  background: linear-gradient(
-    to right,
-    #434343,
-    #000000
-  ); 
+  background: -webkit-linear-gradient(to right, #434343, #000000);  
+  background: linear-gradient(to right, #434343, #000000); 
 }
 
 .bleu-gradient {
   background: #0080FF;
   background: linear-gradient(-90deg, #0080FF 0%, rgba(60, 51, 80, 0) 100%);
-  background: -webkit-linear-gradient(
-    -90deg,
-    #0080FF 0%,
-    rgba(60, 51, 80, 0) 100%
-  );
+  background: -webkit-linear-gradient(-90deg, #0080FF 0%, rgba(60, 51, 80, 0) 100%);
 }
 
 .green-pink-gradient {
@@ -55,64 +41,57 @@ body {
 
 .orange-text-gradient {
   background: #f12711;  
-  background: -webkit-linear-gradient(
-    to top,
-    #f12711,
-    #f5af19
-  );  
-  background: linear-gradient(
-    to top,
-    #f12711,
-    #f5af19
-  ); 
+  background: -webkit-linear-gradient(to top, #f12711, #f5af19);  
+  background: linear-gradient(to top, #f12711, #f5af19); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .green-text-gradient {
   background: #11998e;  
-  background: -webkit-linear-gradient(
-    to top,
-    #11998e,
-    #38ef7d
-  );  
-  background: linear-gradient(
-    to top,
-    #11998e,
-    #38ef7d
-  );  
+  background: -webkit-linear-gradient(to top, #11998e, #38ef7d);  
+  background: linear-gradient(to top, #11998e, #38ef7d);  
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .blue-text-gradient {
   background: #56ccf2;  
-  background: -webkit-linear-gradient(
-    to top,
-    #2f80ed,
-    #56ccf2
-  );  
-  background: linear-gradient(
-    to top,
-    #2f80ed,
-    #56ccf2
-  );  
+  background: -webkit-linear-gradient(to top, #2f80ed, #56ccf2);  
+  background: linear-gradient(to top, #2f80ed, #56ccf2);  
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .pink-text-gradient {
   background: #ec008c;  
-  background: -webkit-linear-gradient(
-    to top,
-    #ec008c,
-    #fc6767
-  );  
-  background: linear-gradient(
-    to top,
-    #ec008c,
-    #fc6767
-  ); 
+  background: -webkit-linear-gradient(to top, #ec008c, #fc6767);  
+  background: linear-gradient(to top, #ec008c, #fc6767); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Added missing gradients */
+.purple-text-gradient {
+  background: #7b2ff7;
+  background: -webkit-linear-gradient(to top, #7b2ff7, #f107a3);
+  background: linear-gradient(to top, #7b2ff7, #f107a3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.yellow-text-gradient {
+  background: #f7971e;
+  background: -webkit-linear-gradient(to top, #f7971e, #ffd200);
+  background: linear-gradient(to top, #f7971e, #ffd200);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.red-text-gradient {
+  background: #ff512f;
+  background: -webkit-linear-gradient(to top, #ff512f, #dd2476);
+  background: linear-gradient(to top, #ff512f, #dd2476);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -126,6 +105,38 @@ body {
   text-indent: -9999em;
   animation: mulShdSpin 1.1s infinite ease;
   transform: translateZ(0);
+}
+
+
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap; /* This ensures the tags will wrap to a new line if there are too many */
+  gap: 8px; /* Space between the tags */
+}
+
+.project-tag {
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+.project-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* Default is 5 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.project-description.react-native-app {
+  -webkit-line-clamp: 6; /* For Full Stack React Native App */
+}
+
+.project-description.ecommerce-website {
+  -webkit-line-clamp: 4; /* For E-Commerce Website */
 }
 
 @keyframes mulShdSpin {

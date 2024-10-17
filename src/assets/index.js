@@ -27,7 +27,7 @@ import tesla from "./company/tesla.png";
 import chat from "./chat.png";
 import fooddelivery from "./fooddelivery.png";
 import portfolio from "./portfolio.png";
-import car from "./car.png";
+import reactnative from "./reactnative.png";
 import ecomerce from "./ecomerce.png";
 import realestateimg from "./realestateimg.png";
 
@@ -58,7 +58,7 @@ export {
   starbucks,
   tesla,
   chat,
-  car,
+  reactnative,
   portfolio,
   fooddelivery,
   ecomerce,

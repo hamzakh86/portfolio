@@ -26,8 +26,8 @@ const Sidebar = () => {
                 to={nav.id}
                 smooth={true}
                 duration={500}
-                className={`flex items-center justify-start space-x-4 p-2 rounded-lg hover:bg-gray-700 transition duration-300 ${
-                  active === nav.title ? "text-white" : "text-secondary"
+                className={`flex items-center justify-start space-x-4 p-2 rounded-lg  transition duration-300 ${
+                  active === nav.title ? "text-black" : "text-secondary"
                 }`}
                 onClick={() => setActive(nav.title)}
                 style={{ cursor: 'pointer' }} 

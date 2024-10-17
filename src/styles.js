@@ -18,4 +18,6 @@ const styles = {
   heroImage: "w-4/5 h-3/2 object-cover rounded-lg ",
 };
 
+
+
 export { styles };

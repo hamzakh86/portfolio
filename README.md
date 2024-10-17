@@ -315,9 +315,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Showcase",
+    name: "Full Stack React Native App",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
       {
         name: "react",
@@ -332,7 +332,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: car,
+    image: reactnative,
     source_code_link: "https://github.com/",
   },
   {
