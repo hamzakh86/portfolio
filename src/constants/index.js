@@ -217,7 +217,7 @@ const projects = [
       },
     ],
     image: reactnative, 
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/hamzakh86/AI-video-sharing",
     description_class: "react-native-app" 
   },
   {
@@ -243,7 +243,7 @@ const projects = [
       },
     ],
     image: ecomerce,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/hamzakh86/E-commerce-Admin-Dashboard",
     description_class: "ecommerce-website" 
   },
   {
@@ -274,7 +274,7 @@ const projects = [
    
     ],
     image: realestateimg,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/hamzakh86/A-modern-real-estate-",
   },
   {
     name: "Food Delivery",
@@ -295,7 +295,7 @@ const projects = [
       },
     ],
     image: fooddelivery,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/hamzakh86/Food-Delivery",
   },
   {
     name: "Portfolio Website",
@@ -320,7 +320,7 @@ const projects = [
       },
     ],
     image: portfolio,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/hamzakh86/portfolio",
   },
   {
     name: "Chat Application",
@@ -346,58 +346,73 @@ const projects = [
     
     ],
     image: chat,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/hamzakh86/Chat-app",
   },
 ];
-
 
 export const certifications = [
   {
     title: "GOMYCODE",
     image: "/assets/certification1.png",
     description: "The Full-Stack Javascript Bootcamp Graduate",
+    type: "link",
+    link: "https://diploma.gomycode.app/?id=31705411332830853",
   },
   {
     title: "SCRUMstudy",
     image: "/assets/certification8.png",
     description: "Scrum for Ops and DevOps Fundamentals",
+    type: "link",
+    link: "https://www.scrumstudy.com/certification/verify?type=SODFC&number=1011595",
   },
   {
     title: "Certifprof",
     image: "/assets/certification7.png",
     description: "Scrum Foundation Professional Certificate SFPC (v2020) - English -",
+    type: "pdf",
+    pdf: "/assets/certification7.pdf",
   },
   {
     title: "freeCodeCamp",
     image: "/assets/certification2.png",
     description: "Responsive Web Design",
+    type: "link",
+    link: "https://www.freecodecamp.org/certification/hamzakh06082000/responsive-web-design",
   },
-
   {
     title: "freeCodeCamp",
     image: "/assets/certification3.png",
     description: "JavaScript Algorithms and Data Structures (Beta)",
+    type: "link",
+    link: "https://www.freecodecamp.org/certification/hamzakh06082000/javascript-algorithms-and-data-structures-v8",
   },
   {
     title: "freeCodeCamp",
     image: "/assets/certification4.png",
     description: "Front End Development Libraries",
+    type: "link",
+    link: "https://www.freecodecamp.org/certification/hamzakh06082000/front-end-development-libraries",
   },
   {
     title: "freeCodeCamp",
     image: "/assets/certification5.png",
     description: "Back End Development and APIs",
+    type: "link",
+    link: "https://www.freecodecamp.org/certification/hamzakh06082000/back-end-development-and-apis",
   },
   {
     title: "Postman",
     image: "/assets/certification6.png",
     description: "Postman API Fundamentals Student Expert",
+    type: "link",
+    link: "https://badgr.com/backpack/badges/66a41b7a1ea7d93715e019af",
   },
   {
     title: "SCRUMstudy",
     image: "/assets/certification9.png",
     description: "Scrum Fundamentals Certified (SFC)",
+    type: "link",
+    link: "https://www.scrumstudy.com/certification/verify?type=SFC&number=1036406",
   },
 ];
-
 export { services, technologies, experiences, testimonials, projects };

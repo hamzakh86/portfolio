@@ -128,7 +128,7 @@ const Works = () => {
       >
         <button
           onClick={handlePrev}
-          className='hidden sm:block absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-14 bg-black-100 text-white p-3 rounded-full shadow-lg hover:bg-black-200 transition duration-300 hover:shadow-xl'
+          className='hidden sm:block absolute left-2 top-1/2 transform -translate-y-1/2 -translate-x-14 bg-black-100 text-white p-3 rounded-full shadow-lg hover:bg-black-200 transition duration-300 hover:shadow-xl'
         >
           <FaArrowLeft className='text-xl' />
         </button>
@@ -141,7 +141,7 @@ const Works = () => {
 
         <button
           onClick={handleNext}
-          className='hidden sm:block absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1 bg-black-100 text-white p-3 rounded-full shadow-lg hover:bg-black-200 transition duration-300 hover:shadow-xl'
+          className='hidden sm:block absolute right-6 top-1/2 transform -translate-y-1/2 translate-x-1 bg-black-100 text-white p-3 rounded-full shadow-lg hover:bg-black-200 transition duration-300 hover:shadow-xl'
         >
           <FaArrowRight className='text-xl' />
         </button>

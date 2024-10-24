@@ -1,3 +1,4 @@
+/* index.css */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
@@ -12,7 +13,7 @@
 }
 
 body {
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 .hash-span {
@@ -22,9 +23,9 @@ body {
 }
 
 .black-gradient {
-  background: #000000; 
-  background: -webkit-linear-gradient(to right, #434343, #000000);  
-  background: linear-gradient(to right, #434343, #000000); 
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
 }
 
 .bleu-gradient {
@@ -40,33 +41,33 @@ body {
 }
 
 .orange-text-gradient {
-  background: #f12711;  
-  background: -webkit-linear-gradient(to top, #f12711, #f5af19);  
-  background: linear-gradient(to top, #f12711, #f5af19); 
+  background: #f12711;
+  background: -webkit-linear-gradient(to top, #f12711, #f5af19);
+  background: linear-gradient(to top, #f12711, #f5af19);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .green-text-gradient {
-  background: #11998e;  
-  background: -webkit-linear-gradient(to top, #11998e, #38ef7d);  
-  background: linear-gradient(to top, #11998e, #38ef7d);  
+  background: #11998e;
+  background: -webkit-linear-gradient(to top, #11998e, #38ef7d);
+  background: linear-gradient(to top, #11998e, #38ef7d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .blue-text-gradient {
-  background: #56ccf2;  
-  background: -webkit-linear-gradient(to top, #2f80ed, #56ccf2);  
-  background: linear-gradient(to top, #2f80ed, #56ccf2);  
+  background: #56ccf2;
+  background: -webkit-linear-gradient(to top, #2f80ed, #56ccf2);
+  background: linear-gradient(to top, #2f80ed, #56ccf2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .pink-text-gradient {
-  background: #ec008c;  
-  background: -webkit-linear-gradient(to top, #ec008c, #fc6767);  
-  background: linear-gradient(to top, #ec008c, #fc6767); 
+  background: #ec008c;
+  background: -webkit-linear-gradient(to top, #ec008c, #fc6767);
+  background: linear-gradient(to top, #ec008c, #fc6767);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight, FaExternalLinkAlt, FaFilePdf } from "react-icons/fa";
 import { certifications } from "../constants";  
 
 const Certifications = () => {
@@ -72,6 +72,22 @@ const Certifications = () => {
               />
               <h3 className='text-white text-[20px] font-bold text-center'>{cert.title}</h3>
               <p className='text-text-primary text-[14px] text-center'>{cert.description}</p>
+              {cert.type === "link" && cert.link && (
+                <div
+                  onClick={() => window.open(cert.link, "_blank")}
+                  className='mt-4 cursor-pointer text-white hover:text-gray-300 transition duration-300'
+                >
+                  <FaExternalLinkAlt className='text-2xl' />
+                </div>
+              )}
+              {cert.type === "pdf" && cert.pdf && (
+                <div
+                  onClick={() => window.open(cert.pdf, "_blank")}
+                  className='mt-4 cursor-pointer text-white hover:text-gray-300 transition duration-300'
+                >
+                  <FaFilePdf className='text-2xl' />
+                </div>
+              )}
             </div>
           ))}
         </div>
