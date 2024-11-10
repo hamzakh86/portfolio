@@ -1,7 +1,7 @@
 import {
   mobile,
   backend,
-  Front,
+  front,
   web,
   javascript,
   typescript,
@@ -68,7 +68,7 @@ const services = [
   },
   {
     title: "Frontend Developer",
-    icon: Front,
+    icon: front,
   },
   {
     title: "Backend Developer",

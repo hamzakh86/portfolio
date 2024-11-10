@@ -1,7 +1,7 @@
 //src/assets/index.js
 import logo from "./logo.svg";
 import backend from "./backend.png";
-import Front from "./Front.webp";
+import front from "./front.webp";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
@@ -32,7 +32,7 @@ import realestateimg from "./realestateimg.png";
 export {
   logo,
   backend,
-  Front,
+  front,
   mobile,
   web,
   github,
