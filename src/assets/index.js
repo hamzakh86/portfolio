@@ -22,8 +22,6 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import gomycode from "./company/gomycode.png";
 import cwd from "./company/cwd.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
 import chat from "./chat.png";
 import fooddelivery from "./fooddelivery.png";
 import portfolio from "./portfolio.png";
@@ -55,8 +53,6 @@ export {
   threejs,
   gomycode,
   cwd,
-  starbucks,
-  tesla,
   chat,
   reactnative,
   portfolio,
