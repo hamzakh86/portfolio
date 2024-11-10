@@ -1,4 +1,3 @@
-// src/components/index.js
 import {BallCanvas, StarsCanvas } from './canvas';
 import Hero from "./Hero";
 import Navbar from "./Navbar";

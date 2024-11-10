@@ -1,4 +1,3 @@
-// src/components/Sidebar.jsx
 import React, { useEffect, useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { navLinks } from "../constants";

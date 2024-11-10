@@ -1,4 +1,3 @@
-// src/components/Footer.jsx
 import React, { useState } from "react";
 import { FaLinkedin, FaGithub, FaInstagram, FaFacebook, FaEnvelope } from "react-icons/fa";
 import { CopyToClipboard } from "react-copy-to-clipboard";

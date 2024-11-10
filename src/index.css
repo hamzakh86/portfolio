@@ -1,4 +1,3 @@
-/* index.css */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
@@ -72,7 +71,6 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-/* Added missing gradients */
 .purple-text-gradient {
   background: #7b2ff7;
   background: -webkit-linear-gradient(to top, #7b2ff7, #f107a3);
@@ -112,8 +110,8 @@ body {
 
 .project-tags {
   display: flex;
-  flex-wrap: wrap; /* This ensures the tags will wrap to a new line if there are too many */
-  gap: 8px; /* Space between the tags */
+  flex-wrap: wrap;
+  gap: 8px; 
 }
 
 .project-tag {
@@ -126,18 +124,18 @@ body {
 
 .project-description {
   display: -webkit-box;
-  -webkit-line-clamp: 5; /* Default is 5 lines */
+  -webkit-line-clamp: 5; 
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .project-description.react-native-app {
-  -webkit-line-clamp: 6; /* For Full Stack React Native App */
+  -webkit-line-clamp: 6; 
 }
 
 .project-description.ecommerce-website {
-  -webkit-line-clamp: 4; /* For E-Commerce Website */
+  -webkit-line-clamp: 4; 
 }
 
 @keyframes mulShdSpin {

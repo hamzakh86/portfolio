@@ -1,4 +1,3 @@
-// src/constants/index.js
 import {
   mobile,
   backend,
@@ -26,9 +25,9 @@ import {
   realestateimg,
   threejs,
 } from "../assets";
-import sabrine from "../assets/testimonials/sabrine.jpg";
-import amine from "../assets/testimonials/amine.jpg";
-import sarah from "../assets/testimonials/sarah.jpg";
+import sabrine from "../assets/testimonials/sabrine.webp";
+import amine from "../assets/testimonials/amine.webp";
+import sarah from "../assets/testimonials/sarah.webp";
 
 
 export const navLinks = [
