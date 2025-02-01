@@ -1,7 +1,7 @@
 //src/assets/index.js
 import logo from "./logo.svg";
 import backend from "./backend.png";
-import front from "./front.webp";
+import front from "./Front.webp";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
