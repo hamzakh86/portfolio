@@ -106,12 +106,10 @@ body {
   transform: translateZ(0);
 }
 
-
-
 .project-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px; 
+  gap: 8px;
 }
 
 .project-tag {
@@ -124,18 +122,18 @@ body {
 
 .project-description {
   display: -webkit-box;
-  -webkit-line-clamp: 5; 
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .project-description.react-native-app {
-  -webkit-line-clamp: 6; 
+  -webkit-line-clamp: 6;
 }
 
 .project-description.ecommerce-website {
-  -webkit-line-clamp: 4; 
+  -webkit-line-clamp: 4;
 }
 
 @keyframes mulShdSpin {

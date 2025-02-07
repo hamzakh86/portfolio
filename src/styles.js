@@ -14,9 +14,7 @@ const styles = {
   sectionSubText:
     "sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider",
 
-  heroImage: "w-4/5 h-3/2 object-cover rounded-lg ",
+  heroImage: "w-4/5 h-3/2 object-cover rounded-lg",
 };
-
-
 
 export { styles };
